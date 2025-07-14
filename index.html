@@ -11,7 +11,7 @@
   <title>株式会社Gステラ | 全ての人が幸せに</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="株式会社Gステラ">
-  <meta property="og:site_name" content="株式会社Gステラ | 全ての人が幸せに">
+  <meta property="og:site_name" content="株式会社Gステラ | 全ての人がタイトル">
   <meta property="og:title" content="株式会社Gステラ | 全ての人が幸せに">
   <meta property="og:description" content="株式会社Gステラは、事業に関わる全ての人の幸せを目指し、皆様に寄り添い、一人一人の豊かな生活を実現します。">
   <meta property="og:type" content="website">
@@ -98,6 +98,13 @@
     .header_pc_menu li a:hover {
       color: #ffcc00; /* Highlight on hover */
     }
+    .header_pc_logo_text {
+      color: #fff;
+      font-size: 1.8rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
 
     /* Mobile Header styles */
     .sp {
@@ -119,8 +126,11 @@
         justify-content: space-between;
         align-items: center;
       }
-      .topgazo img {
-        height: 40px; /* Adjust mobile logo size */
+      .topgazo .title-link {
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-decoration: none;
       }
       .menuBtn_outer {
         z-index: 100; /* Ensure menu button is on top */
@@ -486,8 +496,10 @@
       align-items: center;
       gap: 1.5rem;
     }
-    .footer_block_img img {
-      height: 60px; /* Adjust as needed for footer logo */
+    .footer_block_text {
+      color: #000;
+      font-size: 1.5rem;
+      font-weight: bold;
     }
     .footer_menu {
       display: flex;
@@ -532,8 +544,8 @@
   <!-- PC Header - Displays on larger screens -->
   <header class="pc" id="top">
     <div class="header pc inner">
-      <!-- Company Logo for PC view -->
-      <img src="https://placehold.co/150x50/000/FFF?text=GSTELLA+LOGO" alt="株式会社Gステラ ロゴ">
+      <!-- Company Name for PC view (Logo removed) -->
+      <a href="#top" class="header_pc_logo_text">株式会社Gステラ</a>
       <!-- Navigation menu for PC -->
       <ul class="header_pc_menu">
         <li><a href="#top" class="en">HOME</a></li>
@@ -552,8 +564,8 @@
       <div class="sp_header">
         <div class="topgazo">
           <a class="title-link" href="">
-            <!-- Company Logo for Mobile view -->
-            <img src="https://placehold.co/120x40/000/FFF?text=GSTELLA+LOGO" alt="株式会社Gステラ ロゴ">
+            <!-- Company Name for Mobile view (Logo removed) -->
+            株式会社Gステラ
           </a>
         </div>
         <div class="menuBtn_outer">
@@ -634,7 +646,7 @@
               </div>
               <figure class="service_image">
                 <!-- Updated image source for Store Support -->
-                <img src="https://drive.google.com/uc?export=download&id=1F6xUY6-0uVeQoYlBX_NepX0JAHtYGOJO" alt="店舗支援事業イメージ">
+                <img src="https://github.com/mimimi-k/G-stella/blob/main/%E5%BA%97%E8%88%97%E6%94%AF%E6%8F%B4.png?raw=true" alt="店舗支援事業イメージ">
               </figure>
             </div>
           </li>
@@ -656,7 +668,7 @@
               </div>
               <figure class="service_image">
                 <!-- Updated image source for Energy Consulting -->
-                <img src="https://drive.google.com/uc?export=download&id=1ATpqXcVId7rSd69qr1cHj1QG_HS1x54n" alt="エネルギーコンサルティング事業イメージ">
+                <img src="https://github.com/mimimi-k/G-stella/blob/main/%E5%A4%AA%E9%99%BD%E5%85%89%E3%83%91%E3%83%8D%E3%83%AB%E3%81%A8%E9%A2%A8%E8%BB%8A.png?raw=true" alt="エネルギーコンサルティング事業イメージ">
               </figure>
             </div>
           </li>
@@ -678,7 +690,7 @@
               </div>
               <figure class="service_image">
                 <!-- Updated image source for SNS Marketing -->
-                <img src="https://drive.google.com/uc?export=download&id=1pRv4HsR689kt1K1SG1cC9lCVz5ophC7u" alt="SNS運用代行事業イメージ">
+                <img src="https://github.com/mimimi-k/G-stella/blob/main/SNS%E9%81%8B%E7%94%A8.png?raw=true" alt="SNS運用代行事業イメージ">
               </figure>
             </div>
           </li>
@@ -749,8 +761,8 @@
     <div class="footer inner bg_white">
       <div class="footer_block">
         <div class="footer_block_img">
-          <!-- Footer Logo -->
-          <img src="https://placehold.co/100x30/FFF/000?text=GSTELLA+LOGO" alt="株式会社Gステラ ロゴ">
+          <!-- Company Name in Footer (Logo removed) -->
+          <span class="footer_block_text">株式会社Gステラ</span>
         </div>
         <!-- Footer navigation menu -->
         <ul class="footer_menu">
