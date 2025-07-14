@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- Typekit Font Loading (Original) -->
+  <script>    (function (d) {      var config = {          kitId: 'jlu5zco',          scriptTimeout: 3000,          async: true        },        h = d.documentElement,        t = setTimeout(function () {          h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";        }, config.scriptTimeout),        tk = d.createElement("script"),        f = false,        s = d.getElementsByTagName("script")[0],        a;      h.className += " wf-loading";      tk.src = 'https://use.typekit.net/' + config.kitId + '.js';      tk.async = true;      tk.onload = tk.onreadystatechange = function () {        a = this.readyState;        if (f || a && a != "complete" && a != "loaded") return;        f = true;        clearTimeout(t);        try {          Typekit.load(config)        } catch (e) {}      };      s.parentNode.insertBefore(tk, s)    })(document);  </script>
+
+  <meta charset="utf-8">
+  <meta name="description" content="株式会社Gステラは、事業に関わる全ての人の幸せを目指し、皆様に寄り添い、一人一人の豊かな生活を実現します。">
+  <meta name="keywords" content="株式会社Gステラ,Gステラ,店舗支援,エネルギーコンサルティング,SNS運用代行,ホームページ制作">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>株式会社Gステラ | 全ての人が幸せに</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="株式会社Gステラ">
+  <meta property="og:site_name" content="株式会社Gステラ | 全ての人が幸せに">
+  <meta property="og:title" content="株式会社Gステラ | 全ての人が幸せに">
+  <meta property="og:description" content="株式会社Gステラは、事業に関わる全ての人の幸せを目指し、皆様に寄り添い、一人一人の豊かな生活を実現します。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://">
+  <meta name="twitter:site" content="https://">
+  <link rel="canonical" href="https://">
+  
+  <!-- Font Awesome for icons -->
+  <link href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" rel="stylesheet">
+  <!-- Slick Carousel for sliders (if used) -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  
+  <!-- Original CSS files (assuming these exist or will be provided by the user) -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="acor.css">
+  
+  <!-- Japanese and English Fonts -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp.min.css">
+  <link rel="stylesheet" href="https://indestructibletype-fonthosting.github.io/renner.css" type="text/css" charset="utf-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Zen+Kaku+Gothic+New:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Kiwi+Maru:wght@500&family=Klee+One:wght@600&family=Kosugi+Maru&family=M+PLUS+1p:wght@500&family=Nanum+Gothic:wght@700&family=Noto+Sans+JP&family=Noto+Serif+JP&family=Roboto&family=Sawarabi+Gothic&family=Zen+Kaku+Gothic+Antique:wght@700;900&family=Zen+Kaku+Gothic+New:wght@400;500&family=Zen+Maru+Gothic:wght@400;500;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN for responsive and modern styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Base styles for body and common classes, using Inter as default font */
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .bg_black {
+      background-color: #000;
+    }
+    .color_black {
+      color: #000;
+    }
+    .color_white {
+      color: #fff;
+    }
+    .inner {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .bold {
+      font-weight: 700;
+    }
+    .en {
+      font-family: 'Roboto', sans-serif; /* Example for English font, can be adjusted */
+    }
+    .ja {
+      font-family: 'Noto Sans JP', sans-serif; /* Example for Japanese font, can be adjusted */
+    }
+
+    /* PC Header styles */
+    .header.pc {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+      background-color: #000;
+      color: #fff;
+    }
+    .header_pc_menu {
+      display: flex;
+      gap: 2rem;
+    }
+    .header_pc_menu li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    .header_pc_menu li a:hover {
+      color: #ffcc00; /* Highlight on hover */
+    }
+
+    /* Mobile Header styles */
+    .sp {
+      display: none; /* Hidden by default, shown on smaller screens */
+    }
+    @media (max-width: 768px) {
+      .pc {
+        display: none; /* Hide PC header on small screens */
+      }
+      .sp {
+        display: block; /* Show mobile header on small screens */
+      }
+      .mobileheader {
+        background-color: #000;
+        padding: 1rem;
+      }
+      .sp_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .topgazo img {
+        height: 40px; /* Adjust mobile logo size */
+      }
+      .menuBtn_outer {
+        z-index: 100; /* Ensure menu button is on top */
+      }
+      .menuBtn {
+        cursor: pointer;
+        position: relative;
+        width: 60px; /* Adjust size for button */
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .menuBtn .open, .menuBtn .close {
+        position: absolute;
+        transition: opacity 0.3s ease;
+      }
+      .menuBtn.active .open {
+        opacity: 0;
+      }
+      .menuBtn .close {
+        opacity: 0;
+      }
+      .menuBtn.active .close {
+        opacity: 1;
+      }
+
+      #g-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.95); /* Dark overlay for menu */
+        display: none; /* Hidden by default */
+        z-index: 99;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+      #g-nav.panelactive {
+        display: flex;
+        opacity: 1;
+      }
+      #g-nav-list ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+      }
+      #g-nav-list ul li {
+        margin-bottom: 1.5rem;
+      }
+      #g-nav-list ul li a {
+        color: #fff;
+        font-size: 1.5rem;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: color 0.3s ease;
+      }
+      #g-nav-list ul li a:hover {
+        color: #ffcc00;
+      }
+      .stickarrow {
+        margin-left: 0.5rem;
+        width: 10px;
+        height: 10px;
+        border-right: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        transform: rotate(-45deg);
+      }
+    }
+
+    /* Vision Section styles */
+    .top_ {
+      background-color: #000;
+      color: #fff;
+      padding: 6rem 0;
+      min-height: 80vh; /* Ensure it takes up significant screen space */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .top_block h1 {
+      font-size: 3rem;
+      line-height: 1.2;
+      margin-bottom: 2rem;
+    }
+    .top_block h1 span {
+      color: #ffcc00; /* Highlight color */
+    }
+    .top_back_image p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    @media (max-width: 768px) {
+      .top_block h1 {
+        font-size: 2rem;
+      }
+      .top_back_image p {
+        font-size: 1rem;
+      }
+    }
+
+    /* Service Section styles */
+    .service {
+      padding: 6rem 0;
+      background-color: #1a1a1a; /* Slightly lighter black for contrast */
+      color: #fff;
+    }
+    .service_title {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    .service.title_block p.title {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .service.title_block p.title.ja {
+      font-size: 1.5rem;
+      margin-top: 0.5rem;
+      color: #ccc;
+    }
+    .service_heading_block h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.4;
+    }
+    .service_heading_block p {
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.7;
+      color: #ccc;
+    }
+    @media (max-width: 768px) {
+      .service.title_block p.title {
+        font-size: 2rem;
+      }
+      .service_heading_block h2 {
+        font-size: 1.5rem;
+      }
+    }
+
+    .service_block_li {
+      margin-bottom: 4rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding-bottom: 4rem;
+    }
+    .service_block_li:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    /* Animation for scrolling text in service headings */
+    .service_block_animation {
+      overflow: hidden;
+      white-space: nowrap;
+      margin-bottom: 2rem;
+      width: 100%; /* Ensure it takes full width for animation */
+    }
+    .service_block_heading {
+      font-size: 2.5rem;
+      display: inline-block;
+      animation: scrollText 30s linear infinite; /* Adjust duration as needed */
+      padding-right: 2rem; /* Space between repeated text */
+    }
+    @keyframes scrollText {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-50%); } /* Scrolls half the duplicated content */
+    }
+    @media (max-width: 768px) {
+      .service_block_heading {
+        font-size: 1.8rem;
+        animation: scrollTextMobile 20s linear infinite; /* Faster for mobile */
+      }
+      @keyframes scrollTextMobile {
+        0% { transform: translateX(0%); }
+        100% { transform: translateX(-50%); }
+      }
+    }
+
+    .service_block_flex {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+    }
+    .service_block_flex:nth-child(odd) { /* Original: service_block_flex, then reverse for even */
+      flex-direction: row;
+    }
+    .service_block_flex:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+    @media (max-width: 768px) {
+      .service_block_flex, .service_block_flex:nth-child(even) {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+    .service_block_flex_text {
+      flex: 1;
+    }
+    .service_block_flex_num {
+      font-size: 1.5rem;
+      color: #ffcc00;
+      margin-bottom: 0.5rem;
+    }
+    .service_block_flex_title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .service_detail_text {
+      line-height: 1.7;
+      margin-bottom: 1rem;
+      color: #ccc;
+    }
+    .service_detail_category {
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    .service_image {
+      flex: 1;
+      min-width: 300px;
+      max-width: 50%; /* Control image size on desktop */
+    }
+    .service_image img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+    @media (max-width: 768px) {
+      .service_image {
+        max-width: 90%; /* Adjust image size on mobile */
+      }
+    }
+
+    /* Company Section styles */
+    .company {
+      padding: 6rem 0;
+      background-color: #fff;
+      color: #000;
+    }
+    .company.title_block {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 3rem;
+    }
+    .company.title_block img {
+      height: 60px; /* Adjust as needed for company info icon */
+      margin-left: 2rem;
+    }
+    .company_table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      overflow: hidden; /* For rounded corners on table */
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    .company_table th, .company_table td {
+      padding: 1.2rem;
+      border-bottom: 1px solid #eee;
+      text-align: left;
+    }
+    .company_table th {
+      width: 30%;
+      background-color: #f8f8f8;
+      font-weight: bold;
+      color: #333;
+    }
+    .company_table td {
+      background-color: #fff;
+    }
+    .company_table tr:last-child th, .company_table tr:last-child td {
+      border-bottom: none;
+    }
+    @media (max-width: 768px) {
+      .company_table th, .company_table td {
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+      .company_table th {
+        border-bottom: none;
+        padding-bottom: 0.5rem;
+      }
+      .company_table td {
+        padding-top: 0.5rem;
+        padding-bottom: 1rem;
+      }
+      .company_table tr {
+        margin-bottom: 1rem;
+        display: block;
+        border: 1px solid #eee;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+    }
+
+    /* Contact Section styles */
+    .contact {
+      padding: 6rem 0;
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+    }
+    .contact p.title {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .contact p.title.ja {
+      font-size: 1.5rem;
+      margin-top: 0.5rem;
+      color: #ccc;
+    }
+    .contact_detail {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      color: #ccc;
+    }
+    .common_btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem 2.5rem;
+      background-color: #ffcc00;
+      color: #000;
+      text-decoration: none;
+      border-radius: 9999px; /* Fully rounded */
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 5px 15px rgba(255, 204, 0, 0.4);
+    }
+    .common_btn:hover {
+      background-color: #e6b800;
+      transform: translateY(-2px);
+    }
+    .common_btn i {
+      margin-right: 0.75rem;
+      font-size: 1.3rem;
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #fff;
+      color: #000;
+      padding: 2rem 0;
+      text-align: center;
+    }
+    .footer_block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+    .footer_block_img img {
+      height: 60px; /* Adjust as needed for footer logo */
+    }
+    .footer_menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem 2rem;
+      list-style: none;
+      padding: 0;
+    }
+    .footer_menu li a {
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    .footer_menu li a:hover {
+      color: #ffcc00;
+    }
+    .sns {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+      padding: 0;
+    }
+    .sns li a {
+      color: #000;
+      font-size: 1.5rem;
+      transition: color 0.3s ease, transform 0.2s ease;
+    }
+    .sns li a:hover {
+      color: #ffcc00;
+      transform: translateY(-2px);
+    }
+    .copy-right {
+      margin-top: 1.5rem;
+      font-size: 0.8rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body class="bg_black">
+  <!-- PC Header - Displays on larger screens -->
+  <header class="pc" id="top">
+    <div class="header pc inner">
+      <!-- Company Logo for PC view -->
+      <img src="https://placehold.co/150x50/000/FFF?text=GSTELLA+LOGO" alt="株式会社Gステラ ロゴ">
+      <!-- Navigation menu for PC -->
+      <ul class="header_pc_menu">
+        <li><a href="#top" class="en">HOME</a></li>
+        <li><a href="#about" class="en">VISION</a></li>
+        <li><a href="#service" class="en">SERVICE</a></li>
+        <li><a href="#company" class="en">COMPANY</a></li>
+        <!-- Updated contact link to email -->
+        <li><a href="mailto:gstella.contact@gmail.com" class="en">CONTACT</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- SP Header (Mobile) - Displays on smaller screens -->
+  <header class="sp" id="top">
+    <div class="mobileheader">
+      <div class="sp_header">
+        <div class="topgazo">
+          <a class="title-link" href="">
+            <!-- Company Logo for Mobile view -->
+            <img src="https://placehold.co/120x40/000/FFF?text=GSTELLA+LOGO" alt="株式会社Gステラ ロゴ">
+          </a>
+        </div>
+        <div class="menuBtn_outer">
+          <!-- Mobile menu toggle button -->
+          <div class="menuBtn trigger">
+            <p class="open en bold color_white">MENU</p>
+            <p class="close en bold color_white">CLOSE</p>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile navigation menu -->
+      <nav id="g-nav">
+        <div id="g-nav-list">
+          <ul id="menu">
+            <li><a href="#top" class="menu_flex en color_white">HOME<div class="stickarrow"></div></a></li>
+            <li><a href="#about" class="menu_flex en color_white">VISION<div class="stickarrow"></div></a></li>
+            <li><a href="#service" class="menu_flex en color_white">SERVICE<div class="stickarrow"></div></a></li>
+            <li><a href="#company" class="menu_flex en color_white">COMPANY<div class="stickarrow"></div></a></li>
+            <!-- Updated contact link to email for mobile menu -->
+            <li><a href="mailto:gstella.contact@gmail.com" class="menu_flex en color_white">CONTACT<div class="stickarrow"></div></a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Vision Section: Defines the company's core philosophy -->
+    <div class="top_" id="about">
+      <div class="top_inner inner">
+        <div class="top_block">
+          <div class="top_block_text bold">
+            <h1 class="bold">全ての人が<span>幸せ</span>に</h1>
+            <div class="top_back_image">
+              <p>
+                事業に関わる全ての人の幸せを目指します。<br>
+                この思いが広がりこそが企業の成長に繋がると考えています。<br>
+                皆様に寄り添い、一人一人の豊かな生活を実現します。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service Section: Details the company's various business offerings -->
+    <div class="service" id="service">
+      <div class="inner">
+        <div class="service_title">
+          <div class="service title_block">
+            <p class="title en bold">SERVICE</p>
+            <p class="title ja bold">私たちの事業</p>
+          </div>
+          <div class="service_heading_block">
+            <h2>皆様のビジネスを<br>次のステージへ</h2>
+            <p>
+              株式会社Gステラは、お客様の多様なニーズに応えるため、革新的なサービスを提供しています。<br>
+              私たちは、パートナーシップを重視し、共に未来を創造することを目指します。
+            </p>
+          </div>
+        </div>
+        <ul class="service_block">
+          <!-- Service 01: 店舗支援事業 -->
+          <li class="service_block_li">
+            <div id="service_block_animation_1" class="service_block_animation">
+              <h2 class="service_block_heading">
+                店舗支援の未来を創造する。店舗支援の未来を創造する。店舗支援の未来を創造する。店舗支援の未来を創造する。
+              </h2>
+            </div>
+            <div class="service_block_flex">
+              <div class="service_block_flex_text">
+                <p class="service_block_flex_num en bold">SERVICE/01</p>
+                <h3 class="service_block_flex_title">店舗支援事業</h3>
+                <p class="service_detail_text">
+                  世の中には様々なサービスがあります。その中でも本当に価値のあるサービスを見極め、お客様のニーズにあわせて設計し、充実したサービスを提供支援させていただいています。
+                </p>
+                <!-- Category can be added here if needed, e.g., <p class="service_detail_category">店舗コンサルティング / サービス導入支援</p> -->
+              </div>
+              <figure class="service_image">
+                <!-- Updated image source for Store Support -->
+                <img src="https://drive.google.com/uc?export=download&id=1F6xUY6-0uVeQoYlBX_NepX0JAHtYGOJO" alt="店舗支援事業イメージ">
+              </figure>
+            </div>
+          </li>
+          <!-- Service 02: エネルギーコンサルティング事業 -->
+          <li class="service_block_li">
+            <div id="service_block_animation_1" class="service_block_animation">
+              <h2 class="service_block_heading">
+                持続可能なエネルギーソリューション。持続可能なエネルギーソリューション。持続可能なエネルギーソリューション。
+              </h2>
+            </div>
+            <div class="service_block_flex">
+              <div class="service_block_flex_text">
+                <p class="service_block_flex_num en bold">SERVICE/02</p>
+                <h3 class="service_block_flex_title">エネルギーコンサルティング事業</h3>
+                <p class="service_detail_text">
+                  再生可能エネルギーや脱炭素化により、エネルギー効率が向上し長期的なコスト削減の支援をさせていただいています。
+                </p>
+                <!-- Category can be added here if needed -->
+              </div>
+              <figure class="service_image">
+                <!-- Updated image source for Energy Consulting -->
+                <img src="https://drive.google.com/uc?export=download&id=1ATpqXcVId7rSd69qr1cHj1QG_HS1x54n" alt="エネルギーコンサルティング事業イメージ">
+              </figure>
+            </div>
+          </li>
+          <!-- Service 03: SNS運用代行事業 -->
+          <li class="service_block_li">
+            <div id="service_block_animation_1" class="service_block_animation">
+              <h2 class="service_block_heading">
+                SNSでブランドを加速させる。SNSでブランドを加速させる。SNSでブランドを加速させる。
+              </h2>
+            </div>
+            <div class="service_block_flex">
+              <div class="service_block_flex_text">
+                <p class="service_block_flex_num en bold">SERVICE/03</p>
+                <h3 class="service_block_flex_title">SNS運用代行事業</h3>
+                <p class="service_detail_text">
+                  アカウントの戦略立案、コンテンツ作成、投稿、分析、広告運用など、SNSマーケティングに関わる業務全般を代行させていただきます。
+                </p>
+                <!-- Category can be added here if needed -->
+              </div>
+              <figure class="service_image">
+                <!-- Updated image source for SNS Marketing -->
+                <img src="https://drive.google.com/uc?export=download&id=1pRv4HsR689kt1K1SG1cC9lCVz5ophC7u" alt="SNS運用代行事業イメージ">
+              </figure>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Company Section: Provides essential company information -->
+    <div class="company" id="company">
+      <div class="bg_white inner">
+        <div class="company title_block">
+          <div class="title_block_text">
+            <p class="color_black title en bold">COMPANY</p>
+            <h4 class="color_black ja">会社情報</h4>
+          </div>
+          <!-- Placeholder for company info icon -->
+          <img src="https://placehold.co/60x60/FFF/000?text=INFO" alt="会社情報アイコン">
+        </div>
+        <table class="company_table">
+          <tbody class="company_table_block">
+            <tr>
+              <th class="company_table_block_title">会社名</th>
+              <td class="company_table_block_text">株式会社Gステラ</td>
+            </tr>
+            <tr>
+              <th class="company_table_block_title">代表者</th>
+              <td class="company_table_block_text">濵 将人</td>
+            </tr>
+            <tr>
+              <th class="company_table_block_title">住所</th>
+              <td class="company_table_block_text">〒532-0004<br>大阪府大阪市淀川区西宮原１丁目６－60</td>
+            </tr>
+            <tr>
+              <th class="company_table_block_title">TEL</th>
+              <!-- Updated TEL field with provided phone number -->
+              <td class="company_table_block_text">080-9323-9031</td>
+            </tr>
+            <tr>
+              <th class="company_table_block_title">事業内容</th>
+              <td class="company_table_block_text">
+                店舗支援事業<br>
+                エネルギーコンサルティング事業<br>
+                SNS運用代行事業
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Contact Section: Provides information on how to contact the company -->
+    <div class="contact">
+      <div class="inner textcenter">
+        <p class="title en bold">CONTACT</p>
+        <p class="title ja">お問合せ</p>
+        <p class="contact_detail">
+          株式会社Gステラのサービスに関するご質問やお見積もり、その他お困りごとなどの<br class="br_pc">お問い合わせにつきましては、下記メールアドレスより<br class="br_pc">何でもお気軽にご相談ください。
+        </p>
+        <!-- Updated contact button linking to email -->
+        <a class="common_btn auto en" href="mailto:gstella.contact@gmail.com">
+          <i class="contact fa-solid fa-envelope"></i><span>MAIL US</span>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer inner bg_white">
+      <div class="footer_block">
+        <div class="footer_block_img">
+          <!-- Footer Logo -->
+          <img src="https://placehold.co/100x30/FFF/000?text=GSTELLA+LOGO" alt="株式会社Gステラ ロゴ">
+        </div>
+        <!-- Footer navigation menu -->
+        <ul class="footer_menu">
+          <li class="en"><a href="#top" class="en">HOME</a></li>
+          <li class="en"><a href="#about" class="en">VISION</a></li>
+          <li class="en"><a href="#service" class="en">SERVICE</a></li>
+          <li class="en"><a href="#company" class="en">COMPANY</a></li>
+          <!-- Updated contact link to email in footer -->
+          <li class="en"><a href="mailto:gstella.contact@gmail.com" class="en">CONTACT</a></li>
+        </ul>
+        <!-- Social media links in footer (Instagram icon removed as contact is now email) -->
+        <ul class="sns">
+          <!-- You can add other social media links here if needed, or remove this ul if only email contact -->
+          <!-- <li><a href="https://www.instagram.com/livergate.alls" target="_blank"><i class="fa-brands fa-instagram"></i></a></li> -->
+        </ul>
+      </div>
+    </div>
+    <!-- Copyright information -->
+    <p class="copy-right small">Copyright © 2023 Gステラ Co., Ltd. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Original JavaScript files (assuming these exist or will be provided by the user) -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="script.js"></script>
+
+  <script>
+    // JavaScript for mobile menu toggle functionality
+    // This script assumes jQuery is loaded (from the CDN link above)
+    $(function(){
+      // Toggle 'active' class on menu button and 'panelactive' on navigation when menu button is clicked
+      $('.menuBtn').on('click', function(){
+        $(this).toggleClass('active');
+        $('#g-nav').toggleClass('panelactive');
+      });
+
+      // Close mobile menu when a navigation link is clicked
+      $('#g-nav-list a').on('click', function(){
+        $('.menuBtn').removeClass('active');
+        $('#g-nav').removeClass('panelactive');
+      });
+    });
+
+    // JavaScript to duplicate content for seamless scrolling animation in service headings
+    // This ensures the scrolling text appears continuous.
+    document.addEventListener('DOMContentLoaded', () => {
+      const serviceHeadings = document.querySelectorAll('.service_block_heading');
+      serviceHeadings.forEach(heading => {
+        // Duplicate the inner HTML of each heading
+        heading.innerHTML += ' ' + heading.innerHTML;
+      });
+    });
+  </script>
+</body>
+</html>
